@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Research Project</title>
+    <script src="../p5/p5.js" type="text/javascript"></script>
+    <script src="../p5/addons/p5.dom.js" type="text/javascript"></script>
+    <script src="../p5/addons/p5.sound.js" type="text/javascript"></script>
+
+    <script src="Pokemon.js" type="text/javascript"></script>
+    <script src="startScreen.js" type="text/javascript"></script>
+    <script src="Pyramid.js" type="text/javascript"></script>
+    <script src="mouseClicked.js" type="text/javascript"></script>
+    <script src="preload.js" type="text/javascript"></script>
+    <script src="processRequest.js" type="text/javascript"></script>
+    <script src="Exercises.js" type="text/javascript"></script>
+    <script src="sketch.js" type="text/javascript"></script>
+
+    <!-- Custom CSS -->
+    <style>
+      body {
+        font-family: monospace;
+      }
+
+      #description {
+        border: 1px solid #DDD;
+        background-color: #069;
+        color: #FFF;
+      }
+
+      #controller {
+        border: 1px solid #DDD;
+        background-color: #069;
+        color: #FFF;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="controls">
+    <form>
+      <table>
+        <tbody>
+          <tr>
+            <td>Input Value:</td>
+            <td><input type="text" name="textBox" id="textBox"></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    </div>
+
+    <div id="settings">
+      <form>
+        <div>
+          <button id="done" name="done" onclick="processRequest(); return false;">Enter</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

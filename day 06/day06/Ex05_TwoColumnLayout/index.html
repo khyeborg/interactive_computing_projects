@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ex_ReparentingP5CanvasElements</title>
+    <script src="../p5/p5.js" type="text/javascript"></script>
+    <script src="../p5/addons/p5.dom.js" type="text/javascript"></script>
+    <script src="../p5/addons/p5.sound.js" type="text/javascript"></script>
+
+    <script src="sketch.js" type="text/javascript"></script>
+
+    <!-- custom CSS -->
+    <style type="text/css">
+
+      #container {
+        width: 80%;
+        margin: auto;
+        border: 1px solid black;
+        background: #CCC;
+      }
+
+      #left {
+        width: 250px;
+        float: left;
+      }
+
+      #right {
+        margin-left: 250px;
+        padding: 5px;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <h1>Re-parenting a Canvas Element: 2 Column Layout</h1>
+    <div id="container">
+      <div id="left"></div>
+      <div id="right">content</div>
+      <div style="clear: both;"></div>
+    </div>
+  </body>
+</html>

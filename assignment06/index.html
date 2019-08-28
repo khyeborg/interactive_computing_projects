@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+
+    <!-- P5 libraries -->
+    <script language="javascript" type="text/javascript" src="../libraries/p5.js"></script>
+    <script language="javascript" type="text/javascript" src="../libraries/p5.dom.min.js"></script>
+
+    <!-- A-Frame libraries -->
+    <script language="javascript" type="text/javascript" src="../libraries/aframe.min.js"></script>
+
+    <!-- AFrameP5 library -->
+    <script language="javascript" type="text/javascript" src="../libraries/aframep5.js"></script>
+
+    <!-- P5 Sketch -->
+    <script language="javascript" type="text/javascript" src="Pokemon.js"></script>
+    <!-- <script language="javascript" type="text/javascript" src="Poliwag.js"></script>
+    <script language="javascript" type="text/javascript" src="Diglett.js"></script>
+    <script language="javascript" type="text/javascript" src="Bulbasaur.js"></script>
+    <script language="javascript" type="text/javascript" src="Magnemite.js"></script>
+    <script language="javascript" type="text/javascript" src="Pikachu.js"></script> -->
+    <script language="javascript" type="text/javascript" src="sketch.js"></script>
+
+    <!-- custom styles -->
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- container to hold our VR scene - make sure to give this element an ID of 'VRScene' -->
+    <a-scene id="VRScene">
+      <a-assets id="VRAssets">
+
+        <img id="poliwag_face" src="images/poliwag/poliwag_face.png">
+        <img id="poliwag_face_blink" src="images/poliwag/poliwag_face_blink.png">
+        <img id="poliwag_mouth" src="images/poliwag/poliwag_mouth.png">
+
+        <img id="diglett_face" src="images/diglett/diglett_face.png">
+        <img id="diglett_face_blink" src="images/diglett/diglett_face_blink.png">
+        <img id="diglett_nose" src="images/diglett/diglett_nose.png">
+
+        <img id="bulbasaur_face" src="images/bulbasaur/bulbasaur_face.png">
+        <img id="bulbasaur_face_blink" src="images/bulbasaur/bulbasaur_face_blink.png">
+        <img id="bulbasaur_face_top" src="images/bulbasaur/bulbasaur_face_top.png">
+        <img id="bulbasaur_body" src="images/bulbasaur/bulbasaur_body.png">
+        <img id="bulbasaur_seed_side" src="images/bulbasaur/bulbasaur_seed_side.png">
+        <img id="bulbasaur_seed_side2" src="images/bulbasaur/bulbasaur_seed_side2.png">
+        <img id="bulbasaur_seed_top" src="images/bulbasaur/bulbasaur_seed_top.png">
+        <img id="bulbasaur_seedtop_side" src="images/bulbasaur/bulbasaur_seedtop_side.png">
+        <img id="bulbasaur_seedtop_top" src="images/bulbasaur/bulbasaur_seedtop_top.png">
+
+        <img id="magnemite_face" src="images/magnemite/magnemite_face.png">
+        <img id="magnemite_face_blink" src="images/magnemite/magnemite_face_blink.png">
+        <img id="magnemite_face_screw" src="images/magnemite/magnemite_face_screw.png">
+        <img id="magnemite_face_screwtop_box" src="images/magnemite/magnemite_face_screwtop_box.png">
+        <img id="magnemite_top_screw" src="images/magnemite/magnemite_top_screw.png">
+
+        <img id="pikachu_face" src="images/pikachu/pikachu_face.png">
+        <img id="pikachu_face_blink" src="images/pikachu/pikachu_face_blink.png">
+        <img id="pikachu_top" src="images/pikachu/pikachu_top.png">
+        <img id="pikachu_left" src="images/pikachu/pikachu_left.png">
+        <img id="pikachu_right" src="images/pikachu/pikachu_right.png">
+
+      </a-assets>
+
+      <!-- define the sky for this scene -->
+      <!-- <a-sky id="theSky" src="#sky1" color="rgb(255,255,255)"></a-sky> -->
+    </a-scene>
+
+  </body>
+</html>
+
+

@@ -1,0 +1,13 @@
+#sketch {
+	top: 140px;
+	margin: auto;
+	position: relative;
+    width: 800px;
+    height: 500px;
+    border: none;
+}
+
+div {
+	width: 700px;
+	margin: auto;
+}

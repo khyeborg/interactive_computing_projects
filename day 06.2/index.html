@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo Page</title>
+    <script src="../p5/p5.min.js"></script>
+    <script src="../p5/addons/p5.dom.min.js"></script>
+    <script src="../p5/addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+
+    <script>
+      function setup() {
+        var theCanvas = createCanvas(500, 500);
+        background(128);
+
+        theCanvas.parent("#foo");
+        /*theCanvas.style('display', 'block');
+        theCanvas.style('margin', 'auto');*/
+
+        /* var currentPosition = theCanvas.position();
+        console.log(currentPosition);
+
+        theCanvas.position(100, 114); */
+
+
+
+        /* var c = document.querySelector("canvas");
+        c.style.position = 'absolute';
+        c.style.top = '200px';
+        c.style.left = '150px'; */
+      }
+
+      function changeColor() {
+        fill(random(255), random(255), random(255));
+      }
+
+      function draw() {
+        background(128);
+        // grab the text from the textbox
+        var userText = select("#textBox").value();
+        textSize(50);
+        text(userText, 30, 30);
+
+        if (userText === 'red') {
+          background(255, 0, 0);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Welcome!</h1>
+    <div id="foo"></div>
+    <p>This is my page</p>
+
+    <form>
+      <input type="text" id="textBox">
+      <button id="myButton" onclick="changeColor(); return false;">Change color</button>
+    </form>
+
+  </body>
+</html>

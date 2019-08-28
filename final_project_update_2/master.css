@@ -1,0 +1,20 @@
+body {
+    background-color: skyblue;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    border-style: dashed;
+    width: 700px;
+    margin: auto;
+    padding: 15px;
+    background-color:deepskyblue;
+}
+
+p {
+    font-size: 20px;
+}
+

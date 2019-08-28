@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Day 1 Interactive</title>
+		<style type="text/css">
+			h1 {
+				color: red;
+			}
+		</style>
+
+		<script src="p5.js"></script>
+		<script>
+			console.log("hello!");
+
+			function setup() {
+				createCanvas(300, 300);
+				frameRate(60);
+				//console.log("here");
+
+				/*background(128);
+
+				strokeWeight(5);
+				fill(0, 0, 255, 50);
+				noStroke();
+				ellipse(100, 100, 100, 50); // x, y, width, height 
+
+				point(100, 100);
+
+				rect(87.5, 87.5, 25, 25);
+
+				rectMode(CENTER);
+				rect(150, 150, 50, 50);
+
+				fill(0, 0, 0, 255);
+				textSize(30);
+				text("hello", 30, 30); // text takes 3 arguments */
+
+				/*background(255, 128, 0);
+
+				strokeWeight(10); // extends from both sides of the line 
+
+				line(150, 100, 0, 0);
+				line(0, 0, 0, 200);
+				line(0, 200, 150, 100);
+
+				stroke(0, 0, 255); // make the outline blue
+				strokeWeight(5); // make the outline thicker 
+
+				triangle(50, 50, 75, 100, 0, 150);*/
+				noStroke();
+				noCursor(); // cursor disappears on canvas 
+				background(0);
+			}
+
+			function draw() {
+
+				//stroke(0, 0, 255);
+				//line(150, 150, mouseX, mouseY);
+
+				background(0, 0, 0, 20);
+
+				fill(0, 255, 0);
+				ellipse(mouseX, mouseY, 20, 20);
+
+				fill(255, 0, 0);
+				ellipse(300 - mouseX, mouseY, 20, 20);
+
+				fill(0, 0, 255); 
+				ellipse(mouseX, 300 - mouseY, 20, 20);
+
+				fill(255, 255, 255); 
+				ellipse(300 - mouseX, 300 - mouseY, 20, 20);
+				
+
+				/*
+				fill(255, 0, 0, 5);
+				ellipse(mouseX, 100, 50, 50);
+
+				fill(0, 255, 0, 5);
+				ellipse(mouseX, 150, 50, 50);
+
+				fill(0, 0, 255, 5);
+				ellipse(mouseX, 200, 50, 50);
+				*/
+
+				/*ellipse(mouseX, mouseY, 50, 50);
+				console.log(frameRate());*/
+
+			}
+
+		</script>
+	</head>
+
+	<body>
+		<h1>Day 1!</h1>
+
+		<canvas></canvas> 
+	</body>
+
+</html>

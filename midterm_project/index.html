@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="../p5/p5.js" type="text/javascript"></script>
+    <script src="../p5/addons/p5.dom.js" type="text/javascript"></script>
+    <script src="../p5/addons/p5.sound.js" type="text/javascript"></script>
+
+    <script src="preload.js" type="text/javascript"></script>
+    <script src="mouseClicked.js" type="text/javascript"></script>
+    <script src="startScreen.js" type="text/javascript"></script>
+    <script src="Pokemon.js" type="text/javascript"></script>
+    <script src="Box.js" type="text/javascript"></script>
+    <script src="ScaryPokemon.js" type="text/javascript"></script>
+    <script src="FeedPokemon.js" type="text/javascript"></script>
+    <script src="FeedPokemonMouse.js" type="text/javascript"></script>
+    <script src="DeathPokemon.js" type="text/javascript"></script>
+    <script src="sketch.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="master.css" text="text/css" media="screen">
+    <title>Pokemon Ecosystem</title>
+
+  </head>
+  <body>
+        <h1><img src="pokemonlogo.png" width=300 height=110></h1>
+        <!--preloader -->
+        <div id="p5_loading" class="loadingclass"><h1>ONE MOMENT PLEASE...</h1>
+
+            <div id="progress_bar">
+                <img id="pokeball" src="cutegif.gif" width = 75 height = 70>
+                <h2>LOADING...</h2>
+            </div>
+            
+            
+        </div>
+        
+        <div id="sketch-holder">
+            <!-- Our sketch will go here! -->
+        </div>
+        <h3><u>INSTRUCTIONS</u></h3>
+        <p>First, click on a Pokemon. Hover and click where you want to place your Pokemon. You can create more Pokemons by clicking multiple times. Over time, the Pokemon will flock together and join into a single large Pokemon. Click on the large Pokemon and it will disperse into little Pokemons. You can even see some Pokemon have babies. To clear the Pokemon off your cursor, click on the Pokemon box at the bottom of the ecosystem again. The first button on the top right corner will let you release Haunter to scare the Pokemon away. If you shout into your microphone, you can extend the Haunter's reach and scare more Pokemon away. The second button will let you feed your Pokemon in the ecosystem. The third button lets you put Octillery in the center of the ecosystem to automatically feed your Pokemon. This will allow your ecosystem to sustain itself.</p>
+    </body>
+</html>

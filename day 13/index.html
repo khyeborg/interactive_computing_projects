@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+
+		<!-- P5 libraries -->
+		<script language="javascript" type="text/javascript" src="../libraries/p5.js"></script>
+
+		<!-- A-Frame libraries -->
+		<script language="javascript" type="text/javascript" src="../libraries/aframe.min.js"></script>
+
+		<!-- P5 Sketch -->
+		<script language="javascript" type="text/javascript" src="sketch.js"></script>
+
+	</head>
+	<body>
+
+		<a-scene id="VRScene"> <!-- Shows virtual reality symbol --> 
+
+			<a-assets>
+				<img id="stonebrick" src="images/stonebrick.png"> <!-- Image tag --> 
+
+			</a-assets>
+
+			<a-entity geometry="primitive: box; width:1; height:1; depth:1"
+					  material="src: #stonebrick"
+					  position="0 0 -5"></a-entity>
+
+			<a-entity geometry="primitive: box; width:1; height:1; depth:1"
+					  material="color: rgb(0,255,0)"
+					  position="0 1 -5"></a-entity> <!-- Describing center points --> 
+
+		</a-scene>
+
+	</body>
+</html>

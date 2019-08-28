@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ex09_UserInterfaceDemo</title>
+    <script src="../p5/p5.js" type="text/javascript"></script>
+    <script src="../p5/addons/p5.dom.js" type="text/javascript"></script>
+    <script src="../p5/addons/p5.sound.js" type="text/javascript"></script>
+
+    <script src="sketch.js" type="text/javascript"></script>
+
+    <!-- Custom CSS -->
+    <style>
+      /* input elements can be styled */
+      #textBox {
+        width: 150px;
+        border: 1px dashed #AAA;
+      }
+      /* they can even include hover states */
+      #textBox:focus {
+        border: 5px solid black;
+        outline: 0 none;
+      }
+
+      #textArea {
+        width: 300px;
+        height: 100px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="controls">
+    <form>
+      <table>
+        <tbody>
+          <tr>
+            <td>Text Box:</td>
+            <td><input type="text" name="textBox" id="textBox"></td>
+          </tr>
+          <tr>
+            <td>Text Area:</td>
+            <td><textarea name="textArea" id="textArea"></textarea></td>
+          </tr>
+          <tr>
+            <td>Button:</td>
+            <td><button id="button1" onclick="changeColor(); return false;">Change Fill Color</button></td>
+          </tr>
+          <tr>
+            <td>Range:</td>
+            <td><input type="range" id="range1" min="0" max="200" step="1" value="100" oninput="updateRange(this);" onchange="updateRange(this);"></td>
+          </tr>
+          <tr>
+            <td>Radio:</td>
+            <td>
+              <input type="radio" name="radioButtons" id="radio1" value="ellipse" onclick="updateRadio(this);" checked>Ellipse
+              <input type="radio" name="radioButtons" id="radio2" value="rect" onclick="updateRadio(this);">Rectangle
+            </td>
+          </tr>
+          <tr>
+            <td>Select Menu:</td>
+            <td>
+              <select id="select1" name="select1" onchange="updateSelect(this);">
+                <option value="red" checked>Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+              </select>
+            </td>
+          </tr>
+         </tbody>
+      </table>
+    </form>
+    </div>
+</body>
+</html>

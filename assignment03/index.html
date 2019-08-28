@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment 03</title>
+    <script src="../p5/p5.js" type="text/javascript"></script>
+    <script src="../p5/addons/p5.dom.js" type="text/javascript"></script>
+    <script src="../p5/addons/p5.sound.js" type="text/javascript"></script>
+
+    <script src="sketch.js" type="text/javascript"></script>
+
+    <!-- Custom CSS -->
+    <style>
+      body {
+        font-family: monospace;
+      }
+
+      #description {
+        border: 1px solid #DDD;
+        background-color: #069;
+        color: #FFF;
+      }
+
+      #controller {
+        border: 1px solid #DDD;
+        background-color: #069;
+        color: #FFF;
+      }
+
+      canvas {
+        display: block;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pokemon Game</h1>
+
+    <div>
+      <h2 id="description">Description:</h2>
+      <p>Since this is an open-ended game, I decided to have a ton of fun with it and create a Pokemon game. I like the idea of a main Pokemon collecting fairy Pokemons while avoiding Pokemons that are super effective towards it. I downloaded Pokemon sprites and decided on the specific Pokemons I want to use. I wanted for the game to be funny so I introduced 'Ouch' sounds when Charmander collides with water Pokemons. If Charmander collides with water Pokemons for 5 times, it faints and a sentimental instrumental from Pokemon Black and White gets played. If Charmander wins, Pikachu and Togepi get really happy for him!</p>
+    
+      <h3 id="controller">Physical controller:</h3>
+      <p>While building a physical controller using the Makey Makey keyboard emulator, we decided to incorporate the element of water. We made four aluminum foil containers and filled them up with water. We then connected the boxes to the left, right, up, and down arrow on the Makey Makey keyboard emulator. The user then has the ability to tap on water to control the movement of the main character in the game.</p>
+
+    </div>
+    <!-- <div id="images">
+      <img width="150" src="images/2.png"/>
+      <img width="150" src="images/1.png"/>
+    </div> -->
+
+    <div id="controls">
+    <form>
+      <table>
+        <tbody>
+     
+          <tr>
+            <td>Charmander size:</td>
+            <td><input type="range" id="range1" min="50" max="200" step="1" value="90" oninput="updateRange(this);" onchange="updateRange(this);"></td>
+          </tr>
+ 
+         </tbody>
+      </table>
+    </form>
+    </div>
+
+
+  </body>
+</html>
